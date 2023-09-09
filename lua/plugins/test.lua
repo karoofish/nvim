@@ -1,9 +1,20 @@
 return {
+  { "nvim-neotest/neotest-plenary" },
   { "rouge8/neotest-rust" },
   {
     "nvim-neotest/neotest",
     opts = {
-      adapters = { "neotest-rust" },
+      -- Can be a list of adapters like what neotest expects,
+      -- or a list of adapter names,
+      -- or a table of adapter names, mapped to adapter configs.
+      -- The adapter will then be automatically loaded with the config.
+      adapters = { ["neotest-rust"] = {} },
+      -- Example for loading neotest-go with a custom config
+      -- adapters = {
+      --   ["neotest-go"] = {
+      --     args = { "-tags=integration" },
+      --   },
+      -- },
       status = { virtual_text = true },
       output = { open_on_run = true },
       quickfix = {
@@ -53,7 +64,6 @@ return {
         end
         opts.adapters = adapters
       end
-
       require("neotest").setup(opts)
     end,
     -- stylua: ignore
@@ -96,4 +106,5 @@ return {
       },
       { "<leader>tS", function() require("neotest").run.stop() end, desc = "Stop" },
     },
-  } }
+  },
+}

@@ -4,7 +4,6 @@ return {
     opts = {
       inlay_hints = { enabled = true },
       servers = {
-        yaml = { mason = false },
         rust_analyzer = {
           mason = false,
           keys = {
