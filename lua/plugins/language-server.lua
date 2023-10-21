@@ -4,6 +4,10 @@ return {
     opts = {
       --      inlay_hints = { enabled = true },
       servers = {
+        slint_lsp = {
+          mason = true,
+          root_dir = require("lspconfig").util.root_pattern(),
+        },
         rust_analyzer = {
           mason = false,
           keys = {

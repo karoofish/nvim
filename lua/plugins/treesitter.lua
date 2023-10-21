@@ -17,6 +17,7 @@ return {
           "rust",
           "ron",
           "toml",
+          "slint",
           "make",
           "sql",
         })

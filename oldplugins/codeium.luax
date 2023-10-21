@@ -3,6 +3,7 @@ return {
   {
     "Exafunction/codeium.vim",
     -- event = "VeryLazy",
+    event = "BufEnter",
     config = function(_, opts)
       -- Change "<C-g>" here to any keycode you like.
       vim.keymap.set("i", "<C-g>", function()
