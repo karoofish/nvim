@@ -17,8 +17,8 @@ return {
             preview_cutoff = 0.2,
             preview_height = 0.4,
           },
-          height = 0.9,
-          width = 0.9,
+          height = 0.6,
+          width = 0.8,
         },
         mappings = {
           i = {
