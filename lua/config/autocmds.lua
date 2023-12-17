@@ -24,6 +24,3 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.keymap.set("n", "q", "<cmd>bdelete!<cr>", { buffer = event.buf, silent = true })
   end,
 })
-
--- Associate slint file FileType
-vim.cmd([[ autocmd BufRead,BufNewFile *.slint set filetype=slint ]])
