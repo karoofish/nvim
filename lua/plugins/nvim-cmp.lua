@@ -16,7 +16,13 @@ return {
         event = { "BufRead Cargo.toml" },
         config = true,
       },
-
+      -- codeium
+      {
+        "Exafunction/codeium.nvim",
+        cmd = "Codeium",
+        build = ":Codeium Auth",
+        opts = {},
+      },
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
@@ -24,6 +30,12 @@ return {
     },
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
+      -- codeium
+      table.insert(opts.sources, 1, {
+        name = "codeium",
+        group_index = 1,
+        priority = 100,
+      })
       local has_words_before = function()
         unpack = unpack or table.unpack
         local line, col = unpack(vim.api.nvim_win_get_cursor(0))
