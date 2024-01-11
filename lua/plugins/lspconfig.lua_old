@@ -4,10 +4,10 @@ return {
     opts = {
       servers = {
         rust_analyzer = {
-          enabled = false,
-          opts = {
-            mason = false,
-          },
+          --         enabled = false,
+          --         opts = {
+          mason = false,
+          --         },
         },
       },
     },
