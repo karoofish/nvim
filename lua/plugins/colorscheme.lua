@@ -1,3 +1,4 @@
+vim.opt.background = "light" --"dark"
 return {
   -- add gruvbox
   {
@@ -24,4 +25,32 @@ return {
   --     colorscheme = "dracula",
   --   },
   -- },
+  --
+  -- Lua
+
+  {
+    "olivercederborg/poimandres.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("poimandres").setup({
+        -- leave this setup function empty for default config
+        -- or refer to the configuration section
+        -- for configuration options
+      })
+    end,
+
+    -- optionally set the colorscheme within lazy config
+    init = function()
+      vim.cmd("colorscheme poimandres")
+    end,
+  },
+  {
+    "nyoom-engineering/oxocarbon.nvim",
+    -- Add in any other configuration;
+    --   event = foo,
+    --   config = bar
+    --   end,
+  },
+  { "yorickpeterse/vim-paper" },
 }
