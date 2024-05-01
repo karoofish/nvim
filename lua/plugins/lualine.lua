@@ -2,7 +2,7 @@ return {
   "nvim-lualine/lualine.nvim",
   opts = function()
     return {
-      theme = "cyberdream",
+      theme = "neobones",
       -- sections = {
       --   lualine_c = {
       --     "%=",
