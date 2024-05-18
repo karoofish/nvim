@@ -1,7 +1,7 @@
 {
   "extras": [
     "lazyvim.plugins.extras.coding.codeium",
-    "lazyvim.plugins.extras.coding.native_snippets",
+    "lazyvim.plugins.extras.coding.mini-ai",
     "lazyvim.plugins.extras.coding.tabnine",
     "lazyvim.plugins.extras.dap.core",
     "lazyvim.plugins.extras.dap.nlua",
@@ -16,10 +16,11 @@
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.ui.mini-animate",
     "lazyvim.plugins.extras.ui.mini-starter",
-    "lazyvim.plugins.extras.util.mini-hipatterns"
+    "lazyvim.plugins.extras.util.mini-hipatterns",
+    "lazyvim.plugins.extras.util.project"
   ],
   "news": {
-    "NEWS.md": "3314"
+    "NEWS.md": "4885"
   },
   "version": 3
 }

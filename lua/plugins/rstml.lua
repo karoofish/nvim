@@ -38,10 +38,10 @@ return {
   --   -- end
   -- },
   -- Experimental automatic tag closing and renaming (optional)
-  {
-    "rayliwell/nvim-ts-autotag",
-    config = function()
-      require("nvim-ts-autotag").setup()
-    end,
-  },
+  -- {
+  --   "rayliwell/nvim-ts-autotag",
+  --   config = function()
+  --     require("rayliwell/nvim-ts-autotag").setup()
+  --   end,
+  -- },
 }
