@@ -7,4 +7,5 @@
 --
 --Examples:
 --vim.keymap.set("n", "<leader>rr", "<Cmd>RustRun<CR>", { desc = "Whichkey description" })
+vim.keymap.set("n", "<leader>h", ':lua require("precognition").toggle()<CR>', { desc = "Precondition Toggle" })
 vim.keymap.set("n", "<leader>n", ":ASToggle<CR>", { desc = "AutoSave Toggle" })

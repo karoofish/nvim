@@ -14,9 +14,9 @@ return {
           command = "clippy", --"check",
           extraArgs = { "--no-deps" },
         },
-        rustfmt = {
-          overrideCommand = { "leptosfmt", "--stdin", "--rustfmt" },
-        },
+        -- rustfmt = {
+        --   overrideCommand = { "leptosfmt", "--stdin", "--rustfmt" },
+        -- },
         procMacro = {
           enable = true,
           ignored = {

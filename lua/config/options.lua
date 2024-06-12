@@ -6,3 +6,9 @@
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_python_provider = 0
+
+vim.opt_local.conceallevel = 2
+vim.opt_global.conceallevel = 2
+vim.wo.colorcolumn = "72"
+
+vim.o.background = "dark"
