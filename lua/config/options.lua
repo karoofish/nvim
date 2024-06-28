@@ -9,6 +9,6 @@ vim.g.loaded_python_provider = 0
 
 vim.opt_local.conceallevel = 2
 vim.opt_global.conceallevel = 2
-vim.wo.colorcolumn = "72"
+vim.wo.colorcolumn = ""
 
 vim.o.background = "dark"
